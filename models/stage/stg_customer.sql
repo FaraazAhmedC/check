@@ -6,8 +6,9 @@ with
 
     transformed as (
         select 
-        customerid,
-        firstname,
+        customerid ,
+        firstname ,
+        lastname ,
         email
         from source 
     )

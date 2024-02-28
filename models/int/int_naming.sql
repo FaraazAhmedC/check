@@ -3,7 +3,9 @@ with
     
     finale as (
         select name.firstname as fname,
-        name.email as mail 
+        name.lastname as lname,
+        name.email as mail
+        
         from name
     )
         
