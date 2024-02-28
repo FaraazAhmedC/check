@@ -1,4 +1,4 @@
-# Welcome to your new dbt project!
+# DBT PROJECT
 ## Using the starter project
 Try running the following commands:
 
