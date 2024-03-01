@@ -1,9 +1,10 @@
 with
     connecting as (select * from {{ ref("int_naming") }}),
     groupe as (
-        select *
+        select connecting.lname as filtered_lastname, count(*) as name_count
         from connecting
-        where connecting.lname count(*) > 1
+        group by connecting.lname
+        having count(*) > 1
 
     )
 select *
