@@ -4,7 +4,7 @@ with
         select connecting.lname as filtered_lastname, count(*) as name_count
         from connecting
         group by connecting.lname
-        having count(*) > 1
+        having count(*) > 1 ORDER BY name_count DESC
 
     )
 select *
