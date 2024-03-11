@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: store
+    description: This is the usecase 1 undertaken by faraaz
+    database: DBT_NEW
+    tables:
+      - name: Customer
+      - name: Product
+      - name: Transaction
+      - name: Stock
